@@ -4,6 +4,7 @@
 
     @include breakpoint-up(medium) {
         background: url('../images/bg-header-desktop.png') no-repeat;
+        background-size: contain;
     }
 
     &__logo {
