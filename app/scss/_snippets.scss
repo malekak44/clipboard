@@ -1,0 +1,70 @@
+.snippets {
+    &__description {
+        height: 42.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 3rem;
+
+        @include breakpoint-up(medium) {
+            flex-direction: row;
+            height: 32.5rem;
+        }
+
+        @media (width: 540px) {
+            height: 50rem;
+        }
+
+        &__image {
+            flex: 1;
+            height: 100%;
+            background: url('../images/image-computer.png') no-repeat;
+            background-size: contain;
+            width: 85%;
+
+            @include breakpoint-up(medium) {
+                width: auto;
+                background-position: -1.75rem;
+            }
+        }
+
+        &__features {
+            flex: 1;
+
+            .features-item-container {
+                text-align: center;
+
+                @include breakpoint-up(medium) {
+                    padding: 0 5rem;
+                    text-align: left;
+                }
+
+                .feature__item {
+                    width: 18.125rem;
+
+                    @include breakpoint-up(medium) {
+                        width: 20.625rem;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 3rem;
+                    }
+
+                    h3 {
+                        font-size: 1.4rem;
+                        margin: 0;
+
+                        @include breakpoint-up(medium) {
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

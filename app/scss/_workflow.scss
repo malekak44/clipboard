@@ -1,0 +1,64 @@
+.workflow {
+    &__features {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: baseline;
+        text-align: center;
+        flex-direction: column;
+
+        @include breakpoint-up(medium) {
+            width: 80%;
+            flex-direction: row;
+        }
+
+        .feature__item {
+            flex: 1;
+            padding: 0 5px;
+
+            @include breakpoint-up(medium) {
+                padding: 0 2rem;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+
+                @include breakpoint-up(medium) {
+                    margin-bottom: 0;
+                }
+            }
+
+            h4 {
+                font-size: 1.25rem;
+            }
+
+            p {
+                @include breakpoint-up(medium) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &__companies {
+        width: 85%;
+        margin: auto;
+        padding: 5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        @include breakpoint-up(medium) {
+            flex-direction: row;
+        }
+
+        img {
+            margin-bottom: 4rem;
+
+            @include breakpoint-up(medium) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

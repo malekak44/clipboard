@@ -1,0 +1,17 @@
+.access {
+    &__image {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100%;
+
+            @include breakpoint-up(large) {
+                width: auto;
+            }
+        }
+    }
+}

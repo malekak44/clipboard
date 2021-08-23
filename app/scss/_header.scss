@@ -1,9 +1,9 @@
 .header {
-    background: url('../../images/bg-header-mobile.png') no-repeat;
+    background: url('../images/bg-header-mobile.png') no-repeat;
     background-size: contain;
 
     @include breakpoint-up(medium) {
-        background: url('../../images/bg-header-desktop.png') no-repeat;
+        background: url('../images/bg-header-desktop.png') no-repeat;
     }
 
     &__logo {
@@ -14,7 +14,7 @@
     }
 
     &__content {
-        padding: 7.5rem 0;
+        padding: 7.5rem 0 3rem;
     }
 
     &__text {
@@ -27,7 +27,6 @@
         }
 
         h1 {
-            color: $darkGrayishBlue;
             font-size: 2rem;
             padding: 0 1.25rem;
 
@@ -38,9 +37,6 @@
         }
 
         p {
-            color: $grayishBlue;
-            line-height: 1.5;
-
             font-size: 1rem;
             padding: 0 1.5625rem;
 
@@ -48,52 +44,6 @@
                 font-size: 1.125rem;
                 padding: 0;
             }
-        }
-    }
-
-    &__btns {
-        width: auto;
-        margin: auto;
-        text-align: center;
-        padding: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-
-        @include breakpoint-up(medium) {
-            flex-direction: row;
-            width: 35rem;
-        }
-
-        .btn {
-            color: #fff;
-            text-decoration: none;
-            padding: 0.8125rem 2.1875rem;
-            border-radius: 1.875rem;
-            font-size: 1.125rem;
-            width: 100%;
-
-            @include breakpoint-up(medium) {
-                width: auto;
-            }
-        }
-
-        .btn-ios {
-            background: $strongCyan;
-            border-bottom: 3px solid #209F88;
-            margin-bottom: 1.5rem;
-            box-shadow: 0px 4px 15px #26baa47a;
-
-            @include breakpoint-up(medium) {
-                margin-bottom: 0;
-            }
-        }
-
-        .btn-mac {
-            background: $lightBlue;
-            border-bottom: 3px solid #5161D8;
-            box-shadow: 0px 4px 15px #6173ff7a;
         }
     }
 }
