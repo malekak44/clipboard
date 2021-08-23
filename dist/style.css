@@ -120,6 +120,7 @@ p {
 @media (min-width: 35em) {
   .header {
     background: url("../images/bg-header-desktop.png") no-repeat;
+    background-size: contain;
   }
 }
 
